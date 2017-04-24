@@ -25,14 +25,15 @@ export default class App extends Component {
     const mainTextStyles = {
       fontSize: 48,
       fontWeight: 'lighter',
-      paddingTop: 40,
       color: '#9E9E9E'
     }
     const settings = {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: true,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      accesibility: true,
+      useCSS: true
     }
 
     return (
