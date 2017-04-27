@@ -27,7 +27,8 @@
 .container {
   margin: 0 auto;
   width: 90%;
-  min-height: 600px;
+  height: 100vh;
+  position: relative;
 }
 
 .slick-next:before, .slick-prev:before {

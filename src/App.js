@@ -1,9 +1,28 @@
 import React, { Component } from 'react'
 import './App.css'
 import Slider from 'react-slick'
-import ChevronRight from './ChevronRight'
+import AngleLeft from './AngleLeft'
 import photos from './photos'
 import ReactDOM from 'react-dom'
+import AngleRight from 'react-icons/lib/fa/angle-right'
+
+const SampleNextArrow = (props) => {
+  const {className, style, onClick} = props
+  return (
+    <button onClick={onClick} style={{left: -25, position: 'absolute', padding: 0, transform: 'translate(0, -50%)', top: '50%', border: 0, background: 'none'}}>
+      <AngleLeft style={{fontSize: 60, color: '#9E9E9E'}} />
+    </button>
+  )
+}
+
+const SamplePrevArrow = (props) => {
+  const {className, style, onClick} = props
+  return (
+    <button onClick={onClick} style={{right: -25, position: 'absolute', padding: 0, transform: 'translate(0, -50%)', top: '50%', border: 0, background: 'none'}}>
+      <AngleRight style={{fontSize: 60, color: '#9E9E9E'}} />
+    </button>
+  )
+}
 
 export default class App extends Component {
   componentDidMount = () => {
@@ -21,7 +40,6 @@ export default class App extends Component {
   }
 
   render () {
-    console.log(photos)
     const mainTextStyles = {
       fontSize: 48,
       fontWeight: 'lighter',
@@ -30,10 +48,10 @@ export default class App extends Component {
     const settings = {
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: true,
-      adaptiveHeight: true,
       accesibility: true,
-      useCSS: true
+      useCSS: true,
+      prevArrow: <SampleNextArrow {...this.props} />,
+      nextArrow: <SamplePrevArrow {...this.props} />
     }
 
     return (
@@ -44,11 +62,14 @@ export default class App extends Component {
             {photos.map((photo) => {
               return (
                 <div key={photo}>
-                  <img src={`photos/${photo}`} style={{width: '100%'}} />
+                  <img src={`photos/${photo}`} style={{width: 'auto', height: '80vh', margin: '0 auto'}} />
                 </div>
               )
             })}
           </Slider>
+          <div style={{marginTop: 30, color: '#9E9E9E' }}>
+            Contacto: <a style={{color: '#9E9E9E'}} href='mailto:sayago1983@gmail.com'> sayago1983@gmail.com </a>
+          </div>
         </div>
       </div>
     )
