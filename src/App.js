@@ -56,7 +56,13 @@ export default class App extends Component {
 
     return (
       <div className='App'>
-        <h1 style={mainTextStyles}> Paulina Sayago </h1>
+        <div className='siteNavBar'>
+          <h1> Paulina Sayago </h1>
+          <div>
+            <div>SOBRE MI</div>
+            <div>SESIONES</div>
+          </div>
+        </div>
         <div className='container'>
           <Slider {...settings} ref='slider'>
             {photos.map((photo) => {
@@ -68,7 +74,7 @@ export default class App extends Component {
             })}
           </Slider>
           <div style={{marginTop: 30, color: '#9E9E9E' }}>
-            Contacto: <a style={{color: '#9E9E9E'}} href='mailto:sayago1983@gmail.com'> sayago1983@gmail.com </a>
+            <a style={{color: '#9E9E9E'}} href='mailto:sayago1983@gmail.com'> sayago1983@gmail.com </a>
           </div>
         </div>
       </div>
