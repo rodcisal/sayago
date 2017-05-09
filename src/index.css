@@ -1,9 +1,33 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Source Sans Pro', sans-serif !important;
 }
 
 button:focus {
   outline: none;
+}
+
+.sesiones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sesiones > div {
+  flex-grow: 1;
+  margin-right: 10px;
+  height: 500px;
+}
+
+.sesiones > div:nth-child(n+3) {
+  margin-right: 0;
+}
+
+.cumpleanos {
+  font-weight: lighter;
+}
+
+.block {
+  cursor: pointer;
 }
