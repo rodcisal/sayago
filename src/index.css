@@ -4,6 +4,10 @@ body {
   font-family: 'Source Sans Pro', sans-serif !important;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 button:focus {
   outline: none;
 }
@@ -20,7 +24,7 @@ button:focus {
   height: 500px;
 }
 
-.sesiones > div:nth-child(n+3) {
+.sesiones > div:nth-child(n+4) {
   margin-right: 0;
 }
 

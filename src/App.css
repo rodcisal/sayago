@@ -1,5 +1,7 @@
+
 .App {
   text-align: center;
+  margin-bottom: 150px;
 }
 
 .App-logo {
@@ -27,7 +29,6 @@
 .container {
   margin: 0 auto;
   width: 90%;
-  height: 100vh;
   position: relative;
 }
 
@@ -43,15 +44,17 @@
   padding: 0 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  justify-content: center;
   font-weight: lighter;
   color: grey;
+  margin-top: 30px;
 }
 
 .siteNavBar > h1 {
   font-size: 30px;
   font-weight: lighter;
+  margin: 0;
+  margin-right: 50px;
 }
 
 .siteNavBar > div {
@@ -63,6 +66,30 @@
 
 .siteNavBar > div > div {
   margin-left: 30px;
+}
+
+.siteNavBar--socialNetwork {
+  flex: 1 100%;
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.siteNavBar--socialNetwork svg {
+  color: gray;
+  margin-right: 20px;
+}
+
+.Sesion img {
+  width: 100%;
+}
+
+.Sesion h1 {
+  color: gray;
+}
+
+.sesion-container {
+  padding: 30px;
 }
 /*.slick-list {
     height: auto !important;
@@ -88,3 +115,71 @@
   padding: inherit !important;
   position: inherit !important;
 }*/
+
+.seeMore {
+  height: 30px;
+  border: 0;
+  color: grey;
+  box-shadow: 0 2px 4px 0 rgba(75,79,84,.25);
+  width: 50%;
+  height: 50px;
+  display: none;
+}
+
+.whoami {
+  margin-top: 30px;
+  font-size: 22px;
+  padding: 0px 470px;
+  color: grey;
+  margin-bottom: 100px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  img {
+    height: 30vh !important;
+  }
+
+  .siteNavBar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .siteNavBar > h1 {
+    font-size: 25px;
+  }
+  .siteNavBar > div > div {
+    margin: 0;
+    margin-left: 20px;
+  }
+  .whoami {
+    padding: 0;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 0;
+  }
+
+  .whoami > img {
+    margin: 0 auto !important;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .sesiones {
+    flex-direction: column !important;
+  }
+
+  .sesiones > div {
+    height: 400px !important;
+    margin-bottom: 30px;
+    margin-right: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .seeMore {
+    display: block !important;
+  }
+}
