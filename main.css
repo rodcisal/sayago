@@ -1,20 +1,17 @@
 .carousel {
-  max-width: 1050px;
-  margin: 0 auto;
+  max-width: 850px;
+  margin: 30px auto;
+  margin-top: 20px;
 }
 
 .logo {
-  height: 75px;
+  height: 90px;
   padding: 10px;
 }
 
-/* .carousel-item img {
-  height: 100vh;
-} */
-
 #navbarNavDropdown {
   justify-content: flex-end;
-  padding-right: 10%;
+  padding-right: 5%;
 }
 
 .sobre-mi {
@@ -34,4 +31,10 @@
   font-size: 40px;
   margin: 30px 0;
   text-align: center;
+}
+
+.section-title {
+  color: rgba(0,0,0,.5);
+  font-size: 32px;
+  font-weight: 300;
 }
