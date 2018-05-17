@@ -38,3 +38,37 @@
   font-size: 32px;
   font-weight: 300;
 }
+
+.valores-contenido {
+  padding: 20px 10%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.valores-contenido > div {
+  font-size: 18px;
+  font-weight: lighter;
+  flex: 0 0 45%;
+  text-align: center;
+}
+
+.valores-contenido > div > div {
+  color: #0097a7;
+  font-weight: bold;
+}
+
+.valores {
+  padding-bottom: 100px;
+}
+
+.valores-bottom {
+  padding: 20px 10%;
+}
+
+.valores-bottom {
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 30px;
+}
