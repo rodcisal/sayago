@@ -60,9 +60,19 @@ body {
   text-align: center;
 }
 
+.valores-contenido.matri > div {
+  flex: 0 0 33%;
+}
+
 .valores-contenido > div > div {
   color: #0097a7;
   font-weight: bold;
+}
+
+.matri-header {
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: block;
 }
 
 .valores {
