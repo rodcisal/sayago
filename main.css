@@ -197,3 +197,9 @@ body {
 .het .section-title {
   font-size: 32px;
 }
+
+.hablemos-link {
+  display: block;
+  margin-top: 3rem;
+  color: #000000;
+}
